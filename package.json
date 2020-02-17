@@ -1,0 +1,52 @@
+{
+  "name": "learnFront",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Учебный проект Sotbit",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^13.2.0"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp build && gulp serve",
+    "style": "gulp style"
+  },
+  "browserslist": [
+    "IE 11",
+    "last 4 chrome versions",
+    "last 4 firefox versions"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/scss/**/*.scss"
+  ],
+  "engines": {
+    "node": "^10.16"
+  },
+  "dependencies": {
+    "npm": "^6.13.7"
+  }
+}
